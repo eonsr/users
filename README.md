@@ -18,4 +18,4 @@
 
 ## **Detalle**
 
-El detalle de isntalación se encuentra en el archivo README de el proeycto JAVA.
+El detalle de instalación se encuentra en el archivo README de el proeycto JAVA.
