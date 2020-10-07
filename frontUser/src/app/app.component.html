@@ -1,0 +1,37 @@
+<div style="text-align:center">
+  <h1>
+    PAGO DIARIO USUARIOS
+  </h1>
+</div>
+<div>
+  
+  <table>
+    <tr>
+      <td align="center" >
+        <button (click)="getAllUsers()" class="btn btn-primary btn-block btn-lg">consulta usuarios</button>
+      </td>
+      <td align="center">
+        <button (click)="clearAllUsers()" class="btn btn-primary btn-block btn-lg">limpiar consulta usuarios</button>
+      </td>
+    </tr>
+  </table>
+<br>
+  <div>
+      <table>
+        <thead>
+            <tr>
+            <th *ngFor = "let column of headers">
+              {{column}}
+            </th>
+            </tr>
+        </thead>
+          <tr *ngFor='let user of users'>
+            <td>{{user.name}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.motherLastName}}</td>
+            <td>{{user.rfc}}</td>
+            <td>{{user.birthDate}}</td>
+          </tr>
+      </table>
+  </div>   
+</div>
